@@ -1,7 +1,7 @@
 local leftList = {}
 local rightList = {}
 
-for line in io.lines "d1-data.txt" do
+for line in io.lines "d1-input.txt" do
     local str = string.gsub(line, "%s+", ",")
     local sepIdx = str:find(",")
     table.insert(leftList, str:sub(0, sepIdx - 1))
